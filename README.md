@@ -11,7 +11,7 @@ secure channel, and then contact the server and have it provide the signatures. 
 match, the server must have originated the message.
 
 The client and server communicate via TCP with a port defined as a command line argument.
-The protocol works by sending ASCII characters — not UTF-8 or unicode strings.
+The protocol works by sending ASCII characters.
 The client connects to the server and issues a “HELLO” on a single line.
 The server responds with a “260 OK” string if it receives the “HELLO” message.
 Then the client sends a Command. There are only two commands: “DATA” or “QUIT”.
